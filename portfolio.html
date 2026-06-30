@@ -1,0 +1,1733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chhay Chensievly | Digital Marketing Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --bg-card: #111111;
+        --bg-hover: #1a1a1a;
+        --text: #e8e8e8;
+        --text-dim: #888888;
+        --accent: #c9a96e;
+        --accent-light: #e0c28a;
+        --border: #222222;
+        --border-light: #2a2a2a;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* ===== NAV ===== */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 0 4vw;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+      }
+      .logo {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--text);
+        text-decoration: none;
+        letter-spacing: -0.5px;
+      }
+      .logo span {
+        color: var(--accent);
+      }
+      .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+      }
+      .nav-links a {
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+      .nav-links a:hover {
+        color: var(--text);
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 1.5px;
+        background: var(--accent);
+        transition: width 0.3s ease;
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+      .menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--text);
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4vw;
+        position: relative;
+      }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw;
+        max-width: 1400px;
+        width: 100%;
+        align-items: center;
+      }
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .hero-tag::before {
+        content: "";
+        width: 30px;
+        height: 1.5px;
+        background: var(--accent);
+      }
+      .hero h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -2px;
+      }
+      .hero h1 .accent {
+        color: var(--accent);
+      }
+      .hero-subtitle {
+        font-size: 1.15rem;
+        color: var(--text-dim);
+        font-weight: 400;
+        max-width: 500px;
+      }
+      .hero-desc {
+        color: var(--text-dim);
+        font-size: 0.95rem;
+        max-width: 520px;
+        line-height: 1.8;
+      }
+      .hero-cta {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+      .btn {
+        padding: 0.9rem 2.2rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: none;
+        cursor: pointer;
+        font-family: "DM Sans", sans-serif;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: var(--bg);
+      }
+      .btn-primary:hover {
+        background: var(--accent-light);
+        transform: translateY(-2px);
+      }
+      .btn-outline {
+        background: transparent;
+        color: var(--text);
+        border: 1.5px solid var(--border-light);
+      }
+      .btn-outline:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-img-wrap {
+        position: relative;
+        width: 380px;
+        height: 380px;
+      }
+      .hero-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        z-index: 2;
+        border: 3px solid var(--border);
+      }
+      .hero-img-ring {
+        position: absolute;
+        inset: -15px;
+        border: 1px solid var(--border-light);
+        border-radius: 50%;
+        animation: spin 20s linear infinite;
+      }
+      .hero-img-ring::before {
+        content: "";
+        position: absolute;
+        inset: -10px;
+        border: 1px dashed var(--border-light);
+        border-radius: 50%;
+        animation: spin 30s linear infinite reverse;
+      }
+      .hero-img-dot {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: var(--accent);
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        box-shadow: 0 0 20px var(--accent);
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hero-social {
+        position: absolute;
+        bottom: 3rem;
+        left: 4vw;
+        display: flex;
+        gap: 1.2rem;
+      }
+      .hero-social a {
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--border-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-dim);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+      .hero-social a:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-3px);
+      }
+      .scroll-hint {
+        position: absolute;
+        bottom: 3rem;
+        right: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-dim);
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .scroll-hint i {
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(8px);
+        }
+      }
+
+      /* ===== SECTIONS ===== */
+      section {
+        padding: 8rem 4vw;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .section-header {
+        margin-bottom: 4rem;
+      }
+      .section-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .section-tag::before {
+        content: "";
+        width: 25px;
+        height: 1.5px;
+        background: var(--accent);
+      }
+      .section-title {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+      }
+      .section-desc {
+        color: var(--text-dim);
+        max-width: 550px;
+        font-size: 1rem;
+      }
+
+      /* ===== ABOUT ===== */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 5rem;
+        align-items: start;
+      }
+      .about-left {
+        position: sticky;
+        top: 100px;
+      }
+      .about-img {
+        width: 100%;
+        aspect-ratio: 3/4;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+      }
+      .about-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(20%);
+        transition: filter 0.5s ease;
+      }
+      .about-img:hover img {
+        filter: grayscale(0%);
+      }
+      .about-info {
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        background: var(--bg-card);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+      }
+      .about-info-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.9rem;
+      }
+      .about-info-item:last-child {
+        border-bottom: none;
+      }
+      .about-info-label {
+        color: var(--text-dim);
+      }
+      .about-info-value {
+        color: var(--text);
+        font-weight: 500;
+      }
+      .about-right h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+      }
+      .about-right p {
+        color: var(--text-dim);
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+      .about-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border);
+      }
+      .stat-item {
+        text-align: left;
+      }
+      .stat-num {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--accent);
+        display: block;
+        line-height: 1;
+      }
+      .stat-label {
+        color: var(--text-dim);
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
+      }
+
+      /* ===== SKILLS ===== */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .skill-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 2rem;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .skill-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, var(--accent), transparent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+      }
+      .skill-card:hover {
+        border-color: var(--border-light);
+        transform: translateY(-5px);
+      }
+      .skill-card:hover::before {
+        transform: scaleX(1);
+      }
+      .skill-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(201, 169, 110, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      .skill-card h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+      }
+      .skill-card p {
+        color: var(--text-dim);
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+      .skill-tag {
+        background: var(--bg-hover);
+        color: var(--text-dim);
+        padding: 0.25rem 0.7rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border: 1px solid var(--border);
+      }
+
+      /* ===== EXPERIENCE ===== */
+      .exp-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .exp-item {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 3rem;
+        padding: 2.5rem 0;
+        border-bottom: 1px solid var(--border);
+        transition: all 0.3s ease;
+      }
+      .exp-item:first-child {
+        padding-top: 0;
+      }
+      .exp-item:last-child {
+        border-bottom: none;
+      }
+      .exp-item:hover {
+        padding-left: 1rem;
+      }
+      .exp-date {
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+      }
+      .exp-content h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+      }
+      .exp-company {
+        color: var(--text-dim);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .exp-list-items {
+        list-style: none;
+        padding: 0;
+      }
+      .exp-list-items li {
+        color: var(--text-dim);
+        font-size: 0.9rem;
+        padding: 0.35rem 0;
+        padding-left: 1.2rem;
+        position: relative;
+        line-height: 1.7;
+      }
+      .exp-list-items li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.9rem;
+        width: 5px;
+        height: 5px;
+        background: var(--accent);
+        border-radius: 50%;
+      }
+
+      /* ===== PROJECT TABS ===== */
+      .project-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .tab-btn {
+        padding: 0.7rem 1.5rem;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--text-dim);
+        border: 1px solid var(--border);
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+      .tab-btn:hover {
+        border-color: var(--accent-light);
+        color: var(--accent-light);
+      }
+      .tab-btn.active {
+        background: var(--accent);
+        color: var(--bg);
+        border-color: var(--accent);
+      }
+      .tab-btn .count {
+        display: inline-block;
+        margin-left: 0.4rem;
+        padding: 0.1rem 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+      .tab-btn.active .count {
+        background: rgba(0, 0, 0, 0.2);
+        color: var(--bg);
+      }
+
+      /* ===== PROJECT GRID ===== */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .project-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        position: relative;
+      }
+      .project-card:hover {
+        border-color: var(--border-light);
+        transform: translateY(-5px);
+      }
+      .project-media {
+        height: auto;
+        background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .project-media img,
+      .project-media video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .project-card:hover .project-media img,
+      .project-card:hover .project-media video {
+        transform: scale(1.05);
+      }
+      .project-media i {
+        font-size: 2.5rem;
+        color: var(--border-light);
+        transition: all 0.4s ease;
+      }
+      .project-card:hover .project-media i {
+        color: var(--accent);
+        transform: scale(1.1);
+      }
+      .project-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 50%,
+          rgba(10, 10, 10, 0.8) 100%
+        );
+      }
+      .project-play-btn {
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        background: rgba(201, 169, 110, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bg);
+        font-size: 1.2rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+      }
+      .project-card:hover .project-play-btn {
+        opacity: 1;
+      }
+      .project-info {
+        padding: 1.5rem;
+      }
+      .project-info h3 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .project-info p {
+        color: var(--text-dim);
+        font-size: 0.85rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+      .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+      .project-tag {
+        background: var(--bg-hover);
+        color: var(--text-dim);
+        padding: 0.25rem 0.7rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border: 1px solid var(--border);
+      }
+      .project-tag.accent {
+        background: rgba(201, 169, 110, 0.1);
+        color: var(--accent);
+        border-color: rgba(201, 169, 110, 0.2);
+      }
+
+      /* ===== EDUCATION ===== */
+      .edu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .edu-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .edu-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: var(--accent);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease;
+      }
+      .edu-card:hover::before {
+        transform: scaleY(1);
+      }
+      .edu-card:hover {
+        border-color: var(--border-light);
+      }
+      .edu-date {
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 0.8rem;
+      }
+      .edu-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+      }
+      .edu-school {
+        color: var(--text-dim);
+        font-size: 0.9rem;
+      }
+
+      /* ===== CONTACT ===== */
+      .contact-section {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 4vw 8rem;
+      }
+      .contact-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 5rem 4vw;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          rgba(201, 169, 110, 0.08) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+      .contact-card h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 2;
+      }
+      .contact-card p {
+        color: var(--text-dim);
+        max-width: 500px;
+        margin: 0 auto 2.5rem;
+        position: relative;
+        z-index: 2;
+      }
+      .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+      }
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+      }
+      .contact-link i {
+        width: 44px;
+        height: 44px;
+        background: var(--bg-hover);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+      .contact-link:hover {
+        color: var(--text);
+      }
+      .contact-link:hover i {
+        border-color: var(--accent);
+        background: rgba(201, 169, 110, 0.1);
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        text-align: center;
+        padding: 2rem 4vw;
+        color: var(--text-dim);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--border);
+      }
+
+      /* ===== ANIMATIONS ===== */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-delay-1 {
+        transition-delay: 0.1s;
+      }
+      .reveal-delay-2 {
+        transition-delay: 0.2s;
+      }
+      .reveal-delay-3 {
+        transition-delay: 0.3s;
+      }
+      .reveal-delay-4 {
+        transition-delay: 0.4s;
+      }
+      .reveal-delay-5 {
+        transition-delay: 0.5s;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1024px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 3rem;
+        }
+        .hero-left {
+          align-items: center;
+        }
+        .hero-subtitle,
+        .hero-desc {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        .hero-cta {
+          justify-content: center;
+        }
+        .hero-img-wrap {
+          width: 280px;
+          height: 280px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+        .about-left {
+          position: relative;
+          top: 0;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .about-stats {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .skills-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .projects-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          background: var(--bg);
+          flex-direction: column;
+          padding: 1.5rem 4vw;
+          gap: 1.2rem;
+          border-bottom: 1px solid var(--border);
+        }
+        .nav-links.active {
+          display: flex;
+        }
+        .menu-btn {
+          display: block;
+        }
+        .hero-social,
+        .scroll-hint {
+          display: none;
+        }
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+        .exp-item {
+          grid-template-columns: 1fr;
+          gap: 0.8rem;
+        }
+        .edu-grid {
+          grid-template-columns: 1fr;
+        }
+        .about-stats {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+        .project-tabs {
+          overflow-x: auto;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+        }
+        .contact-links {
+          flex-direction: column;
+          gap: 1.5rem;
+          align-items: center;
+        }
+        section {
+          padding: 5rem 4vw;
+        }
+      }
+      /* ===== VIDEO PLAY OVERLAY & MODAL ===== */
+      .project-media {
+        position: relative;
+      }
+      .play-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.25);
+        transition: background 0.3s ease;
+      }
+      .play-overlay i {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--bg);
+        border-radius: 50%;
+        font-size: 1.1rem;
+        padding-left: 4px;
+        transition:
+          transform 0.3s ease,
+          background 0.3s ease;
+      }
+      .project-card:hover .play-overlay {
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .project-card:hover .play-overlay i {
+        transform: scale(1.1);
+        background: var(--accent);
+        color: var(--bg);
+      }
+      .video-modal-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4vh 4vw;
+      }
+      .video-modal-content {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+      }
+      .video-modal-content video {
+        width: 100%;
+        max-height: 85vh;
+        border-radius: 8px;
+        background: #000;
+      }
+      .image-modal-img {
+        width: 100%;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 8px;
+        display: block;
+      }
+      .video-modal-close {
+        position: absolute;
+        top: -44px;
+        right: 0;
+        background: none;
+        border: none;
+        color: var(--text);
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .video-modal-close:hover {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="logo">Chensievly<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-tag">Digital Marketing Specialist</div>
+          <h1>Chhay <span class="accent">Chensievly</span></h1>
+          <p class="hero-subtitle">
+            Driving Growth Through Strategic Digital Marketing
+          </p>
+          <p class="hero-desc">
+            Hardworking Year 4 Marketing student with proven experience managing
+            end-to-end digital marketing independently. Resourceful,
+            execution-focused, and eager to bring dedication and adaptability to
+            a collaborative professional environment.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"
+              ><i class="fas fa-briefcase"></i> View Work</a
+            >
+            <a href="#contact" class="btn btn-outline"
+              ><i class="fas fa-envelope"></i> Contact</a
+            >
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-img-wrap">
+            <div class="hero-img-ring"></div>
+            <div class="hero-img-dot"></div>
+            <img src="assets/images/profile.jpg" alt="Chhay Chensievly" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.facebook.com/share/18kiiAHkhV/?mibextid=wwXIfr"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="www.linkedin.com/in/chhay-chensievly-424b52374"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.tiktok.com/@chen_sievly27?_r=1&_t=ZS-97dIFF7O49v"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="https://t.me/SIEV_LY3"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span><i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-header reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-desc">
+          A passionate digital marketer with hands-on experience in content
+          creation, social media management, and data-driven strategies.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-img">
+            <img src="assets/images/profile.jpg" alt="Chhay Chensievly" />
+          </div>
+          <div class="about-info">
+            <div class="about-info-item">
+              <span class="about-info-label">Name</span
+              ><span class="about-info-value">Chhay Chensievly</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Location</span
+              ><span class="about-info-value">Phnom Penh, Cambodia</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Email</span
+              ><span class="about-info-value">sievlychen@gmail.com</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Phone</span
+              ><span class="about-info-value">+855 974-990-435</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Languages</span
+              ><span class="about-info-value">Khmer, English</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <h3>Digital Marketing Enthusiast & Content Creator</h3>
+          <p>
+            I am a dedicated Year 4 Marketing student at the National University
+            of Management with a strong foundation in digital marketing. My
+            journey began with hands-on retail experience, which taught me the
+            importance of customer engagement and sales-driven strategies.
+          </p>
+          <p>
+            Currently, I manage corporate social media platforms across
+            Facebook, LinkedIn, Instagram, and Telegram at HRINC (Cambodia) Co.,
+            Ltd. I specialize in creating high-engagement content, designing
+            visual marketing materials, and analyzing campaign performance
+            through data reporting.
+          </p>
+          <p>
+            My goal is to leverage my skills in social media management, content
+            creation, and email marketing to help brands grow their digital
+            presence and connect meaningfully with their audiences.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">4+</span
+              ><span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4</span
+              ><span class="stat-label">Social Platforms</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span
+              ><span class="stat-label">Dedication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header reveal">
+        <div class="section-tag">My Expertise</div>
+        <h2 class="section-title">Skills & Tools</h2>
+        <p class="section-desc">
+          A comprehensive toolkit for modern digital marketing, from content
+          creation to analytics.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon"><i class="fas fa-share-nodes"></i></div>
+          <h3>Social Media Management</h3>
+          <p>
+            Strategic management of corporate social media platforms to drive
+            audience engagement and brand awareness.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Facebook</span
+            ><span class="skill-tag">LinkedIn</span
+            ><span class="skill-tag">Instagram</span
+            ><span class="skill-tag">Telegram</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fas fa-video"></i></div>
+          <h3>Content & Video Editing</h3>
+          <p>
+            Producing high-engagement short-form video content that captures
+            audience attention across digital channels.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">CapCut</span
+            ><span class="skill-tag">Short-form</span
+            ><span class="skill-tag">Content Strategy</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <h3>Graphic Design</h3>
+          <p>
+            Designing professional visual marketing materials, posters, and
+            digital branding assets.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Canva</span
+            ><span class="skill-tag">Visual Design</span
+            ><span class="skill-tag">Branding</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <h3>Email Marketing</h3>
+          <p>
+            Structuring and executing targeted email campaigns to maintain
+            client and candidate relationships.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Campaign Strategy</span
+            ><span class="skill-tag">Segmentation</span
+            ><span class="skill-tag">CRM</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Data & Traffic Reporting</h3>
+          <p>
+            Compiling monthly traffic reports to evaluate campaign performance
+            and optimize strategies.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Analytics</span
+            ><span class="skill-tag">Performance</span
+            ><span class="skill-tag">Data Insights</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon"><i class="fas fa-users"></i></div>
+          <h3>Cross-functional Communication</h3>
+          <p>
+            Collaborating with diverse teams to align marketing initiatives with
+            business objectives.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Teamwork</span
+            ><span class="skill-tag">Stakeholders</span
+            ><span class="skill-tag">Coordination</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-header reveal">
+        <div class="section-tag">Career Path</div>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">
+          A journey of growth from retail to professional digital marketing.
+        </p>
+      </div>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-date">APR 2025 — PRESENT</div>
+          <div class="exp-content">
+            <h3>Digital Marketing</h3>
+            <div class="exp-company">HRINC (Cambodia) Co., Ltd</div>
+            <ul class="exp-list-items">
+              <li>
+                Independently managed corporate social media platforms across
+                Facebook, LinkedIn, Instagram, and Telegram
+              </li>
+              <li>
+                Formulated and designed visual marketing materials, posters, and
+                job seeker graphics using Canva
+              </li>
+              <li>
+                Shot, edited, and produced high-engagement short-form video
+                content using CapCut
+              </li>
+              <li>
+                Maintained and updated the company website layout, logos, and
+                digital branding assets
+              </li>
+              <li>
+                Compiled monthly traffic data reports to analyze campaign
+                performance and audience growth
+              </li>
+              <li>
+                Structured and executed email marketing campaigns to maintain
+                client and candidate relationships
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-date">JAN 2024 — MAR 2025</div>
+          <div class="exp-content">
+            <h3>Beauty Advisor</h3>
+            <div class="exp-company">Beauty Advisors</div>
+            <ul class="exp-list-items">
+              <li>
+                Promoted beauty products to customers, delivering excellent
+                service and driving retail sales
+              </li>
+              <li>
+                Managed daily store operations including inventory arrangement
+                and cash register balancing
+              </li>
+              <li>
+                Engaged with customers online and managed digital sales channels
+              </li>
+              <li>
+                Developed strong customer relationship and communication skills
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-date">MAR — JUL 2023</div>
+          <div class="exp-content">
+            <h3>Call Center Intern</h3>
+            <div class="exp-company">
+              UYFC at National University of Management
+            </div>
+            <ul class="exp-list-items">
+              <li>
+                Conducted direct outreach calls to students providing detailed
+                information regarding university events
+              </li>
+              <li>
+                Collaborated with team members to organize and execute
+                large-scale university events
+              </li>
+              <li>Developed communication and event coordination skills</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-date">NOV — DEC 2023</div>
+          <div class="exp-content">
+            <h3>Front Desk — University Open House</h3>
+            <div class="exp-company">National University of Management</div>
+            <ul class="exp-list-items">
+              <li>
+                Acted as the primary point of contact for prospective students
+              </li>
+              <li>Provided consultation on majors and academic tracks</li>
+              <li>
+                Promoted university programs and guided campus tours during the
+                open house
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header reveal">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">My Work</h2>
+        <p class="section-desc">
+          Browse my work by category. Click a tab to filter projects.
+        </p>
+      </div>
+
+      <div class="project-tabs reveal" id="projectTabs">
+        <button class="tab-btn active" data-tab="video">
+          Video <span class="count">3</span>
+        </button>
+        <button class="tab-btn" data-tab="poster">
+          Poster <span class="count">4</span>
+        </button>
+        <button class="tab-btn" data-tab="client-poster">
+          Client Poster <span class="count">3</span>
+        </button>
+        <button class="tab-btn" data-tab="holiday">
+          Holiday <span class="count">3</span>
+        </button>
+        <button class="tab-btn" data-tab="content">
+          Content <span class="count">2</span>
+        </button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards are loaded dynamically from portfolio-data.json -->
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-header reveal">
+        <div class="section-tag">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-desc">
+          Continuous learning and professional development in marketing and
+          language.
+        </p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-date">2022 — PRESENT</div>
+          <h3 class="edu-title">Bachelor of Marketing</h3>
+          <div class="edu-school">National University of Management</div>
+        </div>
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-date">2020 — 2022</div>
+          <h3 class="edu-title">High School Diploma</h3>
+          <div class="edu-school">BElTIE High School</div>
+        </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-date">2022 — 2024</div>
+          <h3 class="edu-title">General English Program (GEP 7b)</h3>
+          <div class="edu-school">Australian Centre for Education (ACE)</div>
+        </div>
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-date">2024 — PRESENT</div>
+          <h3 class="edu-title">General English Program (GEP 06)</h3>
+          <div class="edu-school">IFL Department of English</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-section" id="contact">
+      <div class="contact-card reveal">
+        <h2>Let's Work Together</h2>
+        <p>
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your vision.
+        </p>
+        <a
+          href="https://t.me/SIEV_LY3"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          style="margin-bottom: 3rem; position: relative; z-index: 9999"
+          ><i class="fas fa-paper-plane"></i> Send Message</a
+        >
+        <div class="contact-links">
+          <a href="mailto:sievlychen@gmail.com" class="contact-link"
+            ><i class="fas fa-envelope"></i><span>sievlychen@gmail.com</span></a
+          >
+          <a href="tel:+855974990435" class="contact-link"
+            ><i class="fas fa-phone"></i><span>+855 974-990-435</span></a
+          >
+          <a href="#" class="contact-link"
+            ><i class="fas fa-map-marker-alt"></i
+            ><span>St 336, Beong Salang, Toul Kork</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer><p>&copy; 2026 Chhay Chensievly. All Rights Reserved.</p></footer>
+
+    <script>
+      // Mobile menu
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuBtn.innerHTML = navLinks.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            navLinks.classList.remove("active");
+            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+          }
+        });
+      });
+
+      // Scroll reveal
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("active");
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+      );
+      reveals.forEach((el) => observer.observe(el));
+
+      // Open a video in a fullscreen modal player
+      function openVideoModal(src, title) {
+        const overlay = document.createElement("div");
+        overlay.className = "video-modal-overlay";
+        overlay.innerHTML = `
+          <div class="video-modal-content">
+            <button class="video-modal-close" aria-label="Close">&times;</button>
+            <video controls autoplay playsinline${title ? ` title="${title}"` : ""}>
+              <source src="${src}" type="video/mp4">
+            </video>
+          </div>`;
+        document.body.appendChild(overlay);
+        document.body.style.overflow = "hidden";
+
+        const close = () => {
+          overlay.remove();
+          document.body.style.overflow = "";
+        };
+        overlay
+          .querySelector(".video-modal-close")
+          .addEventListener("click", close);
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) close();
+        });
+        document.addEventListener("keydown", function escHandler(e) {
+          if (e.key === "Escape") {
+            close();
+            document.removeEventListener("keydown", escHandler);
+          }
+        });
+      }
+
+      // Open an image in a fullscreen lightbox
+      function openImageModal(src, title) {
+        const overlay = document.createElement("div");
+        overlay.className = "video-modal-overlay";
+        overlay.innerHTML = `
+          <div class="video-modal-content">
+            <button class="video-modal-close" aria-label="Close">&times;</button>
+            <img src="${src}" alt="${title || "Project image"}" class="image-modal-img">
+          </div>`;
+        document.body.appendChild(overlay);
+        document.body.style.overflow = "hidden";
+
+        const close = () => {
+          overlay.remove();
+          document.body.style.overflow = "";
+        };
+        overlay
+          .querySelector(".video-modal-close")
+          .addEventListener("click", close);
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) close();
+        });
+        document.addEventListener("keydown", function escHandler(e) {
+          if (e.key === "Escape") {
+            close();
+            document.removeEventListener("keydown", escHandler);
+          }
+        });
+      }
+
+      // Build a project-card's inner HTML from a JSON entry
+      function buildCard(item) {
+        let mediaHtml = "";
+        if (item.type === "video") {
+          mediaHtml = `<video muted loop playsinline preload="metadata"><source src="${item.src}" type="video/mp4"></video><div class="play-overlay"><i class="fas fa-play"></i></div>`;
+        } else if (item.type === "image") {
+          mediaHtml = `<img src="${item.src}" alt="${item.title || "Title"}">`;
+        } else if (item.type === "icon") {
+          mediaHtml = `<i class="${item.icon}"></i>`;
+        }
+
+        const tagsHtml = (item.tags || [])
+          .map((tag, i) =>
+            i === 0
+              ? `<span class="project-tag accent">${tag}</span>`
+              : `<span class="project-tag">${tag}</span>`,
+          )
+          .join("");
+
+        const infoHtml =
+          item.title || item.description || (item.tags && item.tags.length)
+            ? `<div class="project-info">
+                 ${item.title ? `<h3>${item.title}</h3>` : ""}
+                 ${item.description ? `<p>${item.description}</p>` : ""}
+                 ${tagsHtml ? `<div class="project-tags">${tagsHtml}</div>` : ""}
+               </div>`
+            : "";
+
+        const card = document.createElement("div");
+        card.className = "project-card reveal";
+        card.dataset.category = item.category;
+        card.innerHTML = `<div class="project-media">${mediaHtml}</div>${infoHtml}`;
+
+        if (item.link) {
+          card.style.cursor = "pointer";
+          card.addEventListener("click", () => {
+            window.open(item.link, "_blank", "noopener");
+          });
+        } else if (item.type === "video") {
+          card.style.cursor = "pointer";
+          card.addEventListener("click", () => {
+            openVideoModal(item.src, item.title);
+          });
+        } else if (item.type === "image") {
+          card.style.cursor = "pointer";
+          card.addEventListener("click", () => {
+            openImageModal(item.src, item.title);
+          });
+        }
+
+        return card;
+      }
+
+      // Update the count badge on each tab based on loaded data
+      function updateTabCounts(items) {
+        const counts = { all: items.length };
+        items.forEach((item) => {
+          counts[item.category] = (counts[item.category] || 0) + 1;
+        });
+        document.querySelectorAll(".tab-btn").forEach((btn) => {
+          const countEl = btn.querySelector(".count");
+          if (countEl) countEl.textContent = counts[btn.dataset.tab] || 0;
+        });
+      }
+
+      // Wire up tab filtering by data-category (works for any element, not just .project-card)
+      function setupTabFilter() {
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        tabBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            tabBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            const tab = btn.dataset.tab;
+            const cards = document.querySelectorAll(
+              "#projectsGrid [data-category]",
+            );
+
+            cards.forEach((card) => {
+              if (tab === "all" || card.dataset.category === tab) {
+                card.style.display = "block";
+                setTimeout(() => {
+                  card.style.opacity = "1";
+                  card.style.transform = "translateY(0)";
+                }, 50);
+              } else {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                  card.style.display = "none";
+                }, 300);
+              }
+            });
+          });
+        });
+      }
+
+      // Load project data from JSON and render into the grid
+      fetch("portfolio-data.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const grid = document.getElementById("projectsGrid");
+          const items = data.projects || [];
+          items.forEach((item) => grid.appendChild(buildCard(item)));
+          updateTabCounts(items);
+          setupTabFilter();
+
+          // Apply the default active tab's filter on initial load
+          document
+            .querySelectorAll("#projectsGrid [data-category]")
+            .forEach((card) => {
+              if (card.dataset.category !== "video") {
+                card.style.display = "none";
+                card.style.opacity = "0";
+              }
+            });
+
+          // Re-observe newly added .reveal elements for scroll animation
+          document
+            .querySelectorAll("#projectsGrid .reveal")
+            .forEach((el) => observer.observe(el));
+        })
+        .catch((err) => {
+          console.error("Failed to load portfolio-data.json:", err);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+{
+  "projects": [
+    {
+      "category": "video",
+      "type": "video",
+      "src": "assets/videos/IMG_1016.MOV",
+      "title": "ជីវិត Marketing team ស្លន់គ្រប់ពេលវេលា😭",
+      "description": "ជីវិត Marketing team",
+      "tags": ["Video", "CapCut"]
+    },
+    {
+      "category": "video",
+      "type": "video",
+      "src": "assets/videos/IMG_1021.MOV",
+      "title": "ស្លៀកពាក់ថាទៅវត្តហើយ តែមានការងារ Urgent🥹",
+      "description": "ទៅវត្ត",
+      "tags": ["Video", "Reels"]
+    },
+    {
+      "category": "video",
+      "type": "video",
+      "src": "assets/videos/IMG_1149.MOV",
+      "title": "Fresh Graduate Internship – Crop Protection",
+      "description": "Step into the world of modern agriculture and grow your career from the roots up.",
+      "tags": ["Video", "Promo"]
+    },
+    {
+      "category": "video",
+      "type": "video",
+      "src": "assets/videos/IMG_5348.MP4",
+      "title": "ចំណេញបានទាំងការងារ ទាំងចំណេះដឹង និងរូបថត CV ស្អាតៗ",
+      "description": "ចំណេញ",
+      "tags": ["Video", "Promo"]
+    },
+    {
+      "category": "video",
+      "type": "video",
+      "src": "assets/videos/IMG_6587.MOV",
+      "title": "រាងកាយដ៏រឹងមាំមួយនេះ ត្រៀមខ្លួនរួចជាស្រេចសម្រាប់ល្ងាចនេះ 😁",
+      "description": "វីដេអូកម្សាន្ត",
+      "tags": ["Video", "Promo"]
+    },
+    {
+        "category": "video",
+        "type": "video",
+        "src": "assets/videos/IMG_1183.MOV",
+        "title": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ 😁",
+        "description": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ",
+        "tags": ["Video", "Promo"]
+    },
+    {
+        "category": "video",
+        "type": "video",
+        "src": "assets/videos/IMG_1148.MOV",
+        "title": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ 😁",
+        "description": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ",
+        "tags": ["Video", "Promo"]
+    },
+        {
+        "category": "video",
+        "type": "video",
+        "src": "assets/videos/IMG_1147.MOV",
+        "title": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ 😁",
+        "description": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ",
+        "tags": ["Video", "Promo"]
+    },
+        {
+        "category": "video",
+        "type": "video",
+        "src": "assets/videos/IMG_1138.MOV",
+        "title": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ 😁",
+        "description": "សូមស្វាគមន៍មកកាន់ការងារថ្មីរបស់ខ្ញុំ",
+        "tags": ["Video", "Promo"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_1_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_2_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_3_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_4_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_5_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_6_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "poster",
+      "type": "image",
+      "src": "assets/images/photo_7_2026-06-30_08-58-52.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/0.0.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/00 (1).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/1.1B (3).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/12.5 (1).png",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/24.5.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    }, 
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/25.5.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/3-5 (3).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/3-5.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/FUNDERLAND (CAMBODIA).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/FWD.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Hiring Poster  (6).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Hiring Poster  (9).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Hiring Poster for client (1).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Hiring Poster for client (2).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Hiring Poster for client (3).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+        {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/JPG00.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Ministry of Economy and Finance (MEF) (1).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+        {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/MINISTRY OF HEALTH (2).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+            {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/NaKi Group  (2).jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+            {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/Tunsai (1).png",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+            {
+      "category": "client-poster",
+      "type": "image",
+      "src": "assets/images/clients/ZTE.jpg",
+      "title": "",
+      "description": "",
+      "tags": ["Client Poster"]
+    },
+    {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_1_2026-06-30_10-27-00.jpg",
+      "title": "Merry Christmas Greeting",
+      "description": "25 December 2025",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_2_2026-06-30_10-27-00.jpg",
+      "title": "Khmer New Year Greeting",
+      "description": "2026",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_3_2026-06-30_10-27-00.jpg",
+      "title": "Victory over Genocide Day Greeting",
+      "description": "7 January 2026",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_4_2026-06-30_10-27-00.jpg",
+      "title": "Women's Day Greeting",
+      "description": "8 March 2026",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_5_2026-06-30_10-27-00.jpg",
+      "title": "Valentine's Day Greeting",
+      "description": "14 February 2026",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_6_2026-06-30_10-27-00.jpg",
+      "title": "Chinese New Year Greeting",
+      "description": "10 February 2026",
+      "tags": ["Holiday", "Social"]
+    },
+        {
+      "category": "holiday",
+      "type": "image",
+      "src": "assets/images/holiday/photo_7_2026-06-30_10-27-00.jpg",
+      "title": "Queen's Birthday Greeting",
+      "description": "18 June 2026",
+      "tags": ["Holiday", "Social"]
+    },
+
+   {
+      "category": "content",
+      "title": "Email Newsletter Series",
+      "description": "Weekly email content for HRINC candidate engagement.",
+      "tags": [
+        "Content",
+        "Email"
+      ],
+      "link": "assets/1_របៀបប្រើប្រាស់_HRINC_Jobs_website_ដើម្បីស្វែងរកការងារ.pdf"
+    },
+    {
+      "category": "content",
+      "title": "Blog & Social Captions",
+      "description": "SEO-friendly blog posts and engaging social captions.",
+      "tags": [
+        "Content",
+        "Blog"
+      ],
+      "link": "assets/Career Fair.pdf"
+    },
+        {
+      "category": "content",
+      "title": "Blog & Social Captions",
+      "description": "SEO-friendly blog posts and engaging social captions.",
+      "tags": [
+        "Content",
+        "Blog"
+      ],
+      "link": "assets/The benefits of using the HRINCjob website.pdf"
+    }
+  ]
+}
